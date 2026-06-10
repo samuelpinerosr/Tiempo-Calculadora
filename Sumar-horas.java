@@ -1,42 +1,5 @@
 import java.util.Scanner;
 
-public class Menu {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int opcion = 0;
-
-        while (opcion != 5) {
-            System.out.println("\n--- MENU ---");
-            System.out.println("1. Convertir horas a minutos");
-            System.out.println("2. Convertir minutos a segundos");
-            System.out.println("3. Convertir días a horas");
-            System.out.println("4. Sumar minutos a una hora");
-            System.out.println("5. Salir");
-            System.out.print("Elige una opcion: ");
-            opcion = sc.nextInt();
-
-            if (opcion == 1) {
-                HorasAMinutos.main(null);
-            } else if (opcion == 2) {
-                MinutosASegundos.main(null);
-            } else if (opcion == 3) {
-                DiasAHoras.main(null);
-            } else if (opcion == 4) {
-                MinutosAHorasDadas.main(null);
-            } else if (opcion == 5) {
-                System.out.println("Programa terminado.");
-            } else {
-                System.out.println("Opción inválida.");
-            }
-        }
-
-        sc.close();
-    }
-}
-
-
-import java.util.Scanner;
-
 public class MinutosAHorasDadas {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
